@@ -1,0 +1,15 @@
+{
+  "name": "node-express",
+  "url" :
+      "https://github.com/technicalrockstars/node-express",
+  "license": "MIT",
+  "classPath": "src/",
+  "tags": ["web", "js"],
+  "description":
+      "This is MVW Frontend Framework as Haxe!",
+  "version": "0.0.1",
+  "releasenote":
+      "init release",
+  "contributors": ["nobkz"],
+  "dependencies": {}
+}
