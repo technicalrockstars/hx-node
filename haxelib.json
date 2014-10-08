@@ -1,7 +1,7 @@
 {
   "name": "hx-node",
   "url" :
-      "https://github.com/technicalrockstars/node-express",
+      "https://github.com/technicalrockstars/nodehx",
   "license": "MIT",
   "classPath": "src/",
   "tags": ["web", "js"],
