@@ -1,0 +1,6 @@
+-lib buddy
+-cp src 
+-cp test 
+-main EventEmitterTest
+-D nodejs
+-js main.js
