@@ -1,4 +1,4 @@
-package ;
+package events;
 
 import buddy.BuddySuite;
 import buddy.Buddy;

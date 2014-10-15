@@ -1,6 +1,8 @@
 -lib buddy
 -cp src 
 -cp test 
--main EventEmitterTest
+-main Main
 -D nodejs
 -js main.js
+-cmd echo "------Node.js------"
+-cmd node main.js
