@@ -16,9 +16,14 @@ typedef UrlObj = {
 };
 
 
-
+@:native("URL")
 extern class URL{
-	public function parse(url:String,?parseQuery : String,?slashedDenoteHodt : String) : UrlObj;
-	public function format(url:UrlObj) :String;
-	public function resolove(from:String,to:String) : String;
+	public static function parse(url:String,?parseQuery : String,?slashedDenoteHodt : String) : UrlObj;
+	public static function format(url:UrlObj) :String;
+	public static function resolove(from:String,to:String) : String;
+	public static function __init__() : Void{
+		untyped __js__(
+			"var URL = require('url');"
+		);
+	}
 }

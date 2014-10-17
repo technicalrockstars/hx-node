@@ -12,8 +12,7 @@ class URLTest extends BuddySuite implements Buddy{
 	public function new(){
 		describe("url test",{
 			it("url parse test",{
-				var url : URL = Node.require("url");
-				var result = url.parse("http://user:pass@host.com:8080/p/a/t/h?query=string#hash");
+				var result = URL.parse("http://user:pass@host.com:8080/p/a/t/h?query=string#hash");
 				result.string().should.be(
 					({
 						protocol : "http:", 

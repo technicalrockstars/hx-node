@@ -8,7 +8,7 @@ extern class ServerResponse extends EventEmitter implements Writable{
 	public var headerSent(default,null) : Int;
 	public var sendDate : Dynamic;
 	public function writeContinue() : Void;
-	public function writeHead(statusCode:Int,?reasonPhrase:String,?headers:String) : Void;
+	public function writeHead(statusCode:Int,?reasonPhrase:Dynamic,?headers:String) : Void;
 	public function setTimeout(msecs:Int,callback:Dynamic) : Void;
 	@:overload(function(name:String,value:Array<String>) : Void{})
 	public function setHeader(name:String,value:String) : Void;
@@ -22,6 +22,7 @@ extern class ServerResponse extends EventEmitter implements Writable{
 @:build(node.macros.OnEventBuilder.build(ServerResponse,
 	( close : Void -> Void ),
 	( finish : Void -> Void ),
-	( chunkedRemainingBytes : Dynamic -> Void )
+	( chunkedRemainingBytes : Dynamic -> Void ),
+	( data : Dynamic -> Void )
 ))
 class ServerResponseEvent{}
