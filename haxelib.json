@@ -1,12 +1,12 @@
 {
   "name": "hx-node",
   "url" :
-      "https://github.com/technicalrockstars/nodehx",
+      "https://github.com/technicalrockstars/hx-node",
   "license": "MIT",
   "classPath": "src/",
   "tags": ["web", "js"],
   "description":
-      "This is MVW Frontend Framework as Haxe!",
+      "Extern NodeJs library on Haxe",
   "version": "0.0.1",
   "releasenote":
       "init release",
