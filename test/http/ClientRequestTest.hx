@@ -14,8 +14,7 @@ class ClientRequestTest extends BuddySuite implements Buddy{
 	public function new(){
 		describe("ClientRequest",{
 			it("request use protocol http to google.com",function(done){
-				var http : Http = Node.require("http");
-				var request = http.request(URL.parse("http://www.google.com"));
+				var request = Http.request(URL.parse("http://www.google.com"));
 				request.onResponse(function(res){
 					res.statusCode.should.be(302);
 					done();
