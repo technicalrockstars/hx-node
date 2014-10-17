@@ -14,6 +14,9 @@ extern class EventEmitter{
 	public function listeners(event : String) : Array<Listener>;
 	public function emit(event :String , ?arg1 : Dynamic, ?arg2 : Dynamic, ?arg3 : Dynamic, ?arg4 : Dynamic, ?arg5 : Dynamic, ?arg6 : Dynamic) : Void;
 	public static function __init__() : Void{
-		 haxe.macro.Compiler.includeFile("src/node/events/eventEmitterInit.js");
+		 untyped __js__(
+"var native = require('events'); 
+node.events = {}; 
+node.events.EventEmitter = native.EventEmitter;");
 	}
 }
