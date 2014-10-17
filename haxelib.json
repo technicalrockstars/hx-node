@@ -9,7 +9,7 @@
       "Extern NodeJs library on Haxe",
   "version": "0.0.2",
   "releasenote":
-      "init release",
+      "Additions for http, url, events, netm stream, buffet",
   "contributors": ["nobkz"],
   "dependencies": {}
 }
